@@ -1,0 +1,9 @@
+2025-07-21 18:47:15 [http-nio-8080-exec-3] INFO  c.c.v.service.impl.VendorServiceImpl - Vendor with id 3 found
+2025-07-21 18:47:15 [http-nio-8080-exec-3] DEBUG c.c.v.service.impl.VendorServiceImpl - Vendor with id 3 found in debug level
+2025-07-21 18:47:25 [http-nio-8080-exec-5] INFO  c.c.v.service.impl.VendorServiceImpl - Vendor with id 3 found
+2025-07-21 18:47:25 [http-nio-8080-exec-5] DEBUG c.c.v.service.impl.VendorServiceImpl - Vendor with id 3 found in debug level
+2025-07-21 18:47:32 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21 18:47:32 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-21 18:47:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21 18:47:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-21 18:47:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
