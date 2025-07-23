@@ -5,7 +5,6 @@ import com.cloud.vendor.model.Vendor;
 import com.cloud.vendor.service.VendorService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
@@ -45,6 +44,14 @@ public class VendorControllerTest {
         vendor.setVendorAddress(VENDOR_ADDRESS);
         vendor.setVendorPhoneNumber(VENDOR_PHONE);
         return vendor;
+    }
+
+    @Test
+    public void testSaveVendorSuccess(){
+        when(vendorService.save(fetchVendor())).thenReturn(Optional.of(fetchVendor()));
+        ResponseEntity<Object> response  =vendorController.save(fetchVendor());
+        Assertions.assertEquals(HttpStatus.CREATED, response.getStatusCode());
+
     }
 
 }
